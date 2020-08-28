@@ -20,6 +20,7 @@ def pargs():
 
   #model
   parser.add_argument("-model",default="graph",help="model types: 'graph' for graph transformer (default), 'gat' for graph attention network, 'ents' for entity-only model." )
+  #embedding size-esz-500
   parser.add_argument("-esz",default=500,type=int,help='embedding size')
   parser.add_argument("-hsz",default=500,type=int,help="hidden state size")
   parser.add_argument("-prop",default=6,type=int,help="number of layers/blocks")
